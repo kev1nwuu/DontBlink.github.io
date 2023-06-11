@@ -1,0 +1,205 @@
+.container-fornavbar {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    position: relative;
+}
+
+.navbar {
+
+    border-bottom: 2px solid #000000;
+    margin-left: 0.7cm;
+    margin-right: 0.7cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
+}
+
+.navbar-brand {
+    color: #000000;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 0.3cm;
+    font-family:'Gilda Display';
+    
+}
+
+.title {
+    font-size: 60px;
+    padding-left: 1.5cm;
+}
+
+.text{
+    padding-top: 48px;
+}
+
+
+.home-link:hover {
+    
+    background-color: grey;
+}
+
+.sv-link:hover{
+   
+    background-color: grey;
+}
+
+.about-link:hover{
+    
+    background-color: grey;
+}
+
+.app-link:hover{
+    
+    background-color: grey;
+}
+
+.services-section {
+    padding: 20px;
+    text-align: center;
+    margin-right: 0.55cm;
+    font-family:'Gilda Display';
+    color: #000000;
+    font-weight: bold;
+    
+}
+.services-section h1 {
+    font-size: 40px;
+}
+
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #000000;
+    font-family: 'URW Franklin Gothic', sans-serif;
+}
+  
+#btn-back-to-top:hover{
+    border-color: rgb(0, 0, 0);
+    /* Change the border color to red on hover */
+    background-color: #58504B;
+    color: #FFFFFF;
+}
+
+
+
+/* image*/
+
+.section-image {
+    background-color: #100d0d;
+    margin: 3cm;
+    color: #FFFFFF;
+}
+
+.section-image .col-md-6 {
+    padding: 30px;
+}
+
+
+
+.section-image .text-column {
+    margin-top: 230px;
+
+    font-family: 'Gilda Display';
+}
+
+.description {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+  
+
+.section-image h2 {
+    font-size: 16px;
+    
+}
+
+.t1{
+    font-size: 20px;
+    font-family: 'Gilda Display';
+}
+
+.fixed-size{
+    width: 600px;
+    height: 899px;
+}
+
+/* Style the "book STYLE" button */
+.Book_button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn-lg {
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-size: 25px;
+    color: #000000;
+    font-family: 'URW Franklin Gothic', sans-serif;
+}
+
+.btn-lg:hover {
+    border-color: rgb(0, 0, 0);
+    /* Change the border color to red on hover */
+    background-color: #58504B;
+    color: #FFFFFF;
+}
+
+
+
+
+/* Style the footer */
+.footer {
+    background-color: #f8f9fa;
+    padding-top: 2cm;
+    margin-top: 2cm;
+}
+
+.text-muted1 {
+    padding-top: 6.5px;
+    padding-right: 4cm;
+    font-family: 'URW Franklin Gothic', sans-serif;
+
+}
+
+.text-end {
+    margin-top: 2cm;
+}
+
+.contact-heading {
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+
+.contact-info {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-details {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-details p {
+    margin: 0;
+}
+

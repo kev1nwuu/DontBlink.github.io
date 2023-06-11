@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color: #b5b6b7;
+}
+
+.home-link{
+    margin-bottom: 2cm;
+    background-color: #000000;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'URW Franklin Gothic', sans-serif;
+}
+
+.home-link:hover{
+    border-color: rgb(0, 0, 0);
+    /* Change the border color to red on hover */
+    background-color: #58504B;
+    color: #FFFFFF;
+}

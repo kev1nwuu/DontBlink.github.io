@@ -1,0 +1,176 @@
+.container-fornavbar {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30vh;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+.navbar {
+
+    border-bottom: 2px solid #000000;
+    margin-left: 0.7cm;
+    margin-right: 0.7cm;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+}
+
+.navbar-brand {
+    color: #000000;
+    font-weight: bold;
+    font-size: 23px;
+    margin-left: 0.3cm;
+    font-family: 'Gilda Display';
+
+}
+
+.title {
+    font-size: 60px;
+    padding-left: 1.5cm;
+
+}
+
+.text {
+    padding-top: 48px;
+}
+
+
+.home-link:hover {
+
+    background-color: grey;
+}
+
+.sv-link:hover {
+
+    background-color: grey;
+}
+
+.about-link:hover {
+
+    background-color: grey;
+}
+
+.app-link:hover {
+
+    background-color: grey;
+}
+
+.book-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* image*/
+
+.Carousel {
+    max-width: 2000px;
+    /* Adjust the maximum width as desired */
+    margin: 0 auto;
+    /* Center the carousel horizontally */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    /* Adjust the image width as needed */
+    height: auto;
+
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    color: #ffffff;
+    /* Set the color to black */
+}
+
+/* staff section*/
+.staff-intro {
+    background-color: #f8f9fa;
+}
+
+.staff-intro h2 {
+    font-weight: bold;
+}
+
+.staff-intro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.staff-intro h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.staff-intro p {
+    font-size: 1rem;
+}
+
+
+
+.staff-intro {
+    margin-top: 30px;
+    padding-right: 0.59cm;
+    border-bottom: 1px solid #000;
+}
+
+.same-size-image {
+    width: 350px;
+    /* Adjust the width as desired */
+    height: 350px;
+    /* Adjust the height as desired */
+}
+
+
+
+
+
+
+/* Style the footer */
+.footer {
+    background-color: #f8f9fa;
+
+    padding-top: 2cm;
+
+}
+
+.text-muted1 {
+    padding-top: 6.5px;
+    padding-right: 4cm;
+    font-family: 'URW Franklin Gothic', sans-serif;
+
+}
+
+.text-end {
+    margin-top: 2cm;
+}
+
+.contact-heading {
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+
+.contact-info {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contact-details {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-details p {
+    margin: 0;
+}
