@@ -83,7 +83,7 @@
 
 .btn-primary:hover{
     border-color: rgb(0, 0, 0);
-    /* Change the border color to red on hover */
+
     background-color: #58504B;
     color: #FFFFFF;
 }

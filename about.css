@@ -71,14 +71,14 @@
 
 .Carousel {
     max-width: 2000px;
-    /* Adjust the maximum width as desired */
+
     margin: 0 auto;
-    /* Center the carousel horizontally */
+
 }
 
 .carousel-item img {
     max-width: 100%;
-    /* Adjust the image width as needed */
+
     height: auto;
 
 }
@@ -86,7 +86,6 @@
 .carousel-caption h3,
 .carousel-caption p {
     color: #ffffff;
-    /* Set the color to black */
 }
 
 /* staff section*/
@@ -123,9 +122,9 @@
 
 .same-size-image {
     width: 350px;
-    /* Adjust the width as desired */
+
     height: 350px;
-    /* Adjust the height as desired */
+
 }
 
 
