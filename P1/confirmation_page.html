@@ -20,7 +20,8 @@
 <body>
     <div class="container text-center mt-5">
         <h1><span id="name"></span>, we've got you confirmed for your appointment!</h1>
-        <p>A confirmation email will also be delivered shortly, including options for changing or canceling appointments.</p>
+        <p>A confirmation email will also be delivered shortly, including options for changing or canceling
+            appointments.</p>
         <hr>
         <h3>THANK YOU ~</h3>
         <hr>
@@ -28,17 +29,40 @@
         <p>Shoot Location: <span id="location"></span></p>
         <p>Appointment Date and Time: <span id="appointmentDateTime"></span></p>
         <p>Expert: <span id="expert"></span></p>
+        <p>Total Price: <span id="totalPrice"></span></p>
 
         <a class="navbar-brand home-link" href="./index.html"> Back to Home</a>
-       
+
     </div>
-   
 
-   
-   
-   
 
-   
+    <script>
+        window.addEventListener('load', function () {
+            // Get the URL parameters
+            let params = new URLSearchParams(window.location.search);
+
+            // Get values from URL parameters
+            let name = params.get('name');
+            let appointmentDate = params.get('appointmentDate');
+            let appointmentTime = params.get('appointmentTime');
+            let expert = params.get('expert');
+            let location = params.get('location');
+            let price = params.get('price');
+
+            // Display values on page
+            document.querySelector('#name').textContent = name;
+            document.querySelector('#appointmentDateTime').textContent = `${appointmentDate} at ${appointmentTime}`;
+            document.querySelector('#expert').textContent = expert;
+            document.querySelector('#location').textContent = location;
+            document.querySelector('#totalPrice').textContent = "$" + price;
+        });
+    </script>
+
+
+
+
+
+
 
 
 </body>

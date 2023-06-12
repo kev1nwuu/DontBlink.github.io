@@ -210,7 +210,7 @@
 
 
         <div class="text-center mt-3">
-            <button type="submit" class="btn btn-primary">Book</button>
+            <button type="submit" class="btn btn-primary" onclick="redirectToConfirmation()">Book</button>
         </div>
     </div>
 
@@ -231,7 +231,7 @@
 
 
 
-        <footer class="footer">
+    <footer class="footer">
         <div class="row">
             <div class="contact-info">
                 <h5 class="me-3 contact-heading">Contact:</h5>
@@ -242,7 +242,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="row">
             <div class="col-4 text-end">
                 <p class="text-muted1 text-black">&copy; All content Copyright © 2023 Don't Blink</p>
@@ -258,6 +258,132 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        
+    <script>
+        // add or reomve price and qulity from the page display 
+        var x = 0;
+        var x1 = 0;
+        var x2 = 0;
+        var x3 = 0;
+        var x4 = 0;
+        var g1 = 0;
+        var g2 = 0;
+        var g3 = 0;
+        var g4 = 0;
+
+        function addToCart1() {
+            x += 99;
+            x1 += 99;
+            g1 += 1;
+            document.getElementById('Price').innerHTML = "$" + x;
+            document.getElementById('g1').innerHTML = g1;
+        }
+        function addToCart2() {
+            x += 166;
+            x2 += 166;
+            g2 += 1;
+            document.getElementById('Price').innerHTML = "$" + x;
+            document.getElementById('g2').innerHTML = g2;
+        }
+        function addToCart3() {
+            x += 66;
+            x3 += 66;
+            g3 += 1;
+            document.getElementById('Price').innerHTML = "$" + x;
+            document.getElementById('g3').innerHTML = g3;
+        }
+        function addToCart4() {
+            x += 133;
+            x4 += 133;
+            g4 += 1;
+            document.getElementById('Price').innerHTML = "$" + x;
+            document.getElementById('g4').innerHTML = g4;
+        }
+
+        function addToCart5() {
+            x += 111;
+            x4 += 111;
+            g4 += 1;
+            document.getElementById('Price').innerHTML = "$" + x;
+            document.getElementById('g4').innerHTML = g4;
+        }
+
+
+        function removeFromCart1() {
+            if (g1 == 0) {
+            }
+            else {
+                x -= 99;
+                x1 -= 99;
+                g1 -= 1;
+                document.getElementById('Price').innerHTML = "$" + x;
+                document.getElementById('g1').innerHTML = g1;
+            }
+        }
+        function removeFromCart2() {
+            if (g2 == 0) {
+            }
+            else {
+                x -= 166;
+                x2 -= 166;
+                g2 -= 1;
+                document.getElementById('Price').innerHTML = "$" + x;
+                document.getElementById('g2').innerHTML = g2;
+            }
+        }
+        function removeFromCart3() {
+            if (g3 == 0) {
+            }
+            else {
+                x -= 66;
+                x3 -= 66;
+                g3 -= 1;
+                document.getElementById('Price').innerHTML = "$" + x;
+                document.getElementById('g3').innerHTML = g3;
+            }
+        }
+        function removeFromCart4() {
+            if (g4 == 0) {
+            }
+            else {
+                x -= 133;
+                x4 -= 133;
+                g4 -= 1;
+                document.getElementById('Price').innerHTML = "$" + x;
+                document.getElementById('g4').innerHTML = g4;
+            }
+        }
+
+        function removeFromCart5() {
+            if (g4 == 0) {
+            }
+            else {
+                x -= 111;
+                x4 -= 111;
+                g4 -= 1;
+                document.getElementById('Price').innerHTML = "$" + x;
+                document.getElementById('g4').innerHTML = g4;
+            }
+        }
+
+        function update() {
+            localStorage.setItem('p', x);
+            localStorage.setItem('p1', x1);
+            localStorage.setItem('p2', x2);
+            localStorage.setItem('p3', x3);
+            localStorage.setItem('p4', x4);
+            localStorage.setItem('c1', g1);
+            localStorage.setItem('c2', g2);
+            localStorage.setItem('c3', g3);
+            localStorage.setItem('c4', g4);
+            localStorage.setItem('c4', g4);
+
+        }
+
+    </script>
+
+
 
     <script>
         $(document).ready(function () {
@@ -276,6 +402,54 @@
             });
         });
 
+    </script>
+
+
+
+    <script>
+        function redirectToConfirmation() {
+            // Get the entered values from the form fields
+            
+            var name = document.getElementById('name').value;
+            var appointmentDate = document.getElementById('appointmentDate').value;
+            var appointmentTime = document.getElementById('appointmentTime').value;
+            var expert1 = document.getElementById('expert1').checked;
+            var expert2 = document.getElementById('expert2').checked;
+            var location1 = document.getElementById('location1').checked;
+            var location2 = document.getElementById('location2').checked;
+            var preferredLocation = document.getElementById('preferredLocation').value;
+            var totalPrice = x;
+            
+            
+            // Prepare the URL with the parameters
+            var url = "confirmation_page.html?";
+            
+            
+            url += "name=" + encodeURIComponent(name);
+            url += "&appointmentDate=" + encodeURIComponent(appointmentDate);
+            url += "&appointmentTime=" + encodeURIComponent(appointmentTime);
+
+            if (expert1 && expert2) {
+                url += "&expert=" + encodeURIComponent("John Smith, James Gunn");
+            } else if (expert1) {
+                url += "&expert=" + encodeURIComponent("John Smith");
+            } else if (expert2) {
+                url += "&expert=" + encodeURIComponent("James Gunn");
+            } else {
+                url += "&expert=";
+            }
+
+            url += "&location=" + (location1 ? "Don't Blink Studio" : preferredLocation);
+
+
+
+            url += "&price=" + encodeURIComponent(totalPrice);
+
+            console.log(url);
+
+            // Redirect to the Confirmation.html page
+            window.location.href = url;
+        }
     </script>
 
 
